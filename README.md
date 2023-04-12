@@ -1,3 +1,7 @@
+> This is forked from the official repo, so we can make fixes quickly.
+> 
+> Consider moving back to official repo, once V2 support is available in Chi.
+
 ## AWS Lambda Go API Proxy [![Build Status](https://travis-ci.org/awslabs/aws-lambda-go-api-proxy.svg?branch=master)](https://travis-ci.org/awslabs/aws-lambda-go-api-proxy)
 aws-lambda-go-api-proxy makes it easy to run Go APIs written with frameworks such as [Gin](https://github.com/gin-gonic/gin) with AWS Lambda and Amazon API Gateway.
 
@@ -26,7 +30,7 @@ import (
 	"net/http"
 
 	"github.com/aws/aws-lambda-go/lambda"
-	"github.com/awslabs/aws-lambda-go-api-proxy/httpadapter"
+	"github.com/trinnylondon/aws-lambda-go-api-proxy/httpadapter"
 )
 
 func main() {
@@ -55,7 +59,7 @@ import (
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
-	"github.com/awslabs/aws-lambda-go-api-proxy/gin"
+	"github.com/trinnylondon/aws-lambda-go-api-proxy/gin"
 	"github.com/gin-gonic/gin"
 )
 
@@ -102,7 +106,7 @@ import (
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
-	fiberadapter "github.com/awslabs/aws-lambda-go-api-proxy/fiber"
+	fiberadapter "github.com/trinnylondon/aws-lambda-go-api-proxy/fiber"
 	"github.com/gofiber/fiber/v2"
 )
 
