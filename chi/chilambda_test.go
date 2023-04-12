@@ -63,7 +63,7 @@ var _ = Describe("ChiLambdaV2 tests", func() {
 				},
 			}
 
-			resp, err := adapter.ProxyWithContextV2(context.Background(), req)
+			resp, err := adapter.ProxyWithContext(context.Background(), req)
 
 			Expect(err).To(BeNil())
 			Expect(resp.StatusCode).To(Equal(200))

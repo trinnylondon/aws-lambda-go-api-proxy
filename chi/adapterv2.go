@@ -36,7 +36,7 @@ func (g *ChiLambdaV2) Proxy(req events.APIGatewayV2HTTPRequest) (events.APIGatew
 // ProxyWithContext receives context and an API Gateway proxy V2 event,
 // transforms them into an http.Request object, and sends it to the chi.Mux for routing.
 // It returns a proxy response object generated from the http.ResponseWriter.
-func (g *ChiLambdaV2) ProxyWithContextV2(ctx context.Context, req events.APIGatewayV2HTTPRequest) (events.APIGatewayV2HTTPResponse, error) {
+func (g *ChiLambdaV2) ProxyWithContext(ctx context.Context, req events.APIGatewayV2HTTPRequest) (events.APIGatewayV2HTTPResponse, error) {
 	chiRequest, err := g.EventToRequestWithContext(ctx, req)
 	return g.proxyInternal(chiRequest, err)
 }
