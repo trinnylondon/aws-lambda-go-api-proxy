@@ -1,3 +1,6 @@
+# This is now deprecated.  The upstream supports Chi v2 now.  Use it instead, https://github.com/awslabs/aws-lambda-go-api-proxy
+
+
 > This is forked from the official repo, so we can make fixes quickly.
 > 
 > Consider moving back to official repo, once V2 support is available in Chi.
